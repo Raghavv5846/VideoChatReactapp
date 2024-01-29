@@ -14,7 +14,7 @@ export const useSocket=()=>{
 // }
 
 export default function SocketProvider(props){
-    const socket=useMemo(()=> io('localhost:8000'),[]);
+    const socket=useMemo(()=> io('https://video-chat-kcdh.onrender.com/'),[]);
     
   return (
     <socketContext.Provider value={socket}>
