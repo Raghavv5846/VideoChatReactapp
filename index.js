@@ -1,5 +1,5 @@
 const { Server }=require('socket.io');
-const io = new Server(8000,{
+const io = new Server("https://video-chat-kcdh.onrender.com/",{
     cors:true  
 });
 const emailtoSocketId=new Map();
